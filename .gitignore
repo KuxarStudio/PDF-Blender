@@ -1,0 +1,17 @@
+# 1. Entornos virtuales (Tu caja de herramientas)
+venv/
+env/
+
+# 2. Archivos temporales de Python
+__pycache__/
+*.pyc
+
+# 3. Archivos que creará PyInstaller (El .exe)
+build/
+dist/
+*.spec
+
+# 4. Documentos de prueba y reportes (¡MUY IMPORTANTE PARA TU EMPRESA!)
+*.pdf
+*.docx
+*.html
