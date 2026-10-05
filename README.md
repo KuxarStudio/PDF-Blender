@@ -1,63 +1,58 @@
-# PDF-Blender (PDF Tools Pro) 🛠️
+# PDF-Blender
 
-A comprehensive, 100% offline desktop application designed to manipulate, convert, and secure PDF files. 
+**Offline PDF toolkit: merge, split, protect, unprotect, convert to Word and compare PDFs without uploading anything.**
 
-Built with Python and Tkinter, this tool was specifically developed for corporate and financial departments to handle sensitive documentation (invoices, contracts, reports) locally, ensuring absolute data privacy without relying on third-party cloud services.
+PDF-Blender is a desktop app (Python + Tkinter, with a ready-made Windows `.exe`) built for finance and corporate teams that handle sensitive documents such as invoices, contracts and reports. Every operation runs on your own machine: no cloud service, no account, no file ever leaves your computer.
 
-## ✨ Key Features
-* **🔗 Merge PDFs:** Combine multiple PDF files into a single document with a specific order.
-* **✂️ Split PDF:** Extract a specific range of pages from a large document to create a new one.
-* **📝 Convert to Word (.docx):** Transform PDF documents into fully editable Microsoft Word files while maintaining the original layout.
-* **🔓 Remove Restrictions (Unprotect):** Bypass owner passwords to enable text highlighting, copying, and editing on restricted documents.
-* **🔒 Secure (Protect):** Encrypt sensitive PDFs by adding a user password to prevent unauthorized access.
-* **⚖️ Compare Texts:** Analyze two versions of a document and generate an interactive side-by-side HTML report highlighting additions and deletions.
+Made by [Kuxar Studio](https://kuxarstudio.com/en/tools/) · Spanish version: [kuxarstudio.com/herramientas](https://kuxarstudio.com/herramientas/)
 
-## 🛡️ Why PDF-Blender?
-* **Zero Data Leaks:** Processing is done entirely on your local machine. No files are ever uploaded to external servers, guaranteeing maximum confidentiality.
-* **User-Friendly GUI:** Simple and intuitive graphical interface designed for non-technical users.
-* **Standalone Execution:** Can be compiled into a single `.exe` file, requiring no Python installation for the end-user.
+## Features
 
-## 🚀 How to Use
+| Tool | What it does |
+|---|---|
+| Merge PDFs | Combine several PDFs into one, in the order you choose. |
+| Split PDF | Extract a page range from a large document into a new file. |
+| Convert to Word (.docx) | Turn a PDF into an editable Word file, keeping the layout as far as possible. |
+| Remove restrictions | Remove owner-password restrictions (copy, edit, print) from PDFs you are entitled to modify. |
+| Protect | Encrypt a PDF with a user password. |
+| Compare texts | Compare two versions of a document and get an interactive side-by-side HTML report of additions and deletions. |
 
-### For End-Users (No coding required)
-1. Navigate to the **Releases** section on the right side of this repository.
-2. Download the latest `pdf_tools_v2.exe` file.
-3. Double-click the downloaded file to launch the application.
+## Why offline?
 
-### For Developers
-If you want to run the source code or contribute to the project, follow these steps:
+- **Nothing is uploaded.** Documents are processed locally, so there is nothing to leak to a third-party server.
+- **Simple interface.** Designed for people who do not code.
+- **Standalone.** It can be compiled into a single `.exe`, so end users need no Python installation.
 
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/KuxarStudio/PDF-Blender.git](https://github.com/KuxarStudio/PDF-Blender.git)
+## Quick start
 
-2. Navigate to the project directory and create a virtual environment:
+### End users (no coding)
 
-Bash
+1. Open the **Releases** section of this repository.
+2. Download the latest `pdf_tools_v2.exe`.
+3. Double-click it to launch the app.
+
+### Developers
+
+```bash
+git clone https://github.com/KuxarStudio/PDF-Blender.git
 cd PDF-Blender
 python -m venv venv
-
-3. Activate the virtual environment:
-
-Windows: .\venv\Scripts\activate
-macOS/Linux: source venv/bin/activate
-
-4. Install the required dependencies:
-
-pip install pypdf pdf2docx
-
-5. Run the application:
-
+# Windows: .\venv\Scripts\activate    macOS/Linux: source venv/bin/activate
+pip install -r requirements.txt
 python pdf_tools_v2.py
+```
 
-🛠️ Built With
+## Built with
 
-- Python 3
-- Tkinter - Standard GUI library.
-- pypdf - For reading, writing, merging, and encrypting PDF files.
-- pdf2docx - For PDF to Word conversion.
-- difflib - Native library for text comparison.
+- Python 3 and Tkinter (standard GUI library)
+- [pypdf](https://pypi.org/project/pypdf/) for reading, writing, merging and encrypting PDFs
+- [pdf2docx](https://pypi.org/project/pdf2docx/) for PDF to Word conversion
+- `difflib` (standard library) for text comparison
 
-📄 License
-This project is licensed under the GNU General Public License v3.0 (GPL-3.0).
-You are free to use, modify, and distribute this software, but any derived works must also be open-source and distributed under the same license. See the LICENSE file for more details.
+## Contributing and feedback
+
+Issues and pull requests are welcome. If you use PDF-Blender at work and something is missing, open an issue and say what task you were trying to do.
+
+## License
+
+GNU General Public License v3.0 (GPL-3.0). You are free to use, modify and distribute the software; derived works must also be open source under the same license. See [LICENSE](LICENSE).
