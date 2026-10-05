@@ -1,8 +1,8 @@
 # PDF-Blender
 
-**Offline PDF toolkit for Windows: merge, split, protect, unprotect, convert to Word and compare PDFs without uploading anything.**
+**Offline PDF toolkit: merge, split, protect, unprotect, convert to Word and compare PDFs without uploading anything.**
 
-PDF-Blender is a desktop app (Python + Tkinter) built for finance and corporate teams that handle sensitive documents such as invoices, contracts and reports. Every operation runs on your own machine: no cloud service, no account, no file ever leaves your computer.
+PDF-Blender is a desktop app (Python + Tkinter, with a ready-made Windows `.exe`) built for finance and corporate teams that handle sensitive documents such as invoices, contracts and reports. Every operation runs on your own machine: no cloud service, no account, no file ever leaves your computer.
 
 Made by [Kuxar Studio](https://kuxarstudio.com/en/tools/) · Spanish version: [kuxarstudio.com/herramientas](https://kuxarstudio.com/herramientas/)
 
